@@ -2,6 +2,7 @@
 import scipy.io
 import matplotlib.pyplot as plt
 import numpy as np
+import h5py
 from sklearn import tree
 
 #f = h5py.File('C:\Users\Packard Bell\Documents\MATLAB\All_Data.mat', 'r')
