@@ -36,8 +36,9 @@ param_grid = { 'n_estimators': n_estimators,
                'min_samples_split': min_samples_split,
                'min_samples_leaf': min_samples_leaf}
 
-# RandomSearchCV to sample random range of values, then fit and evaluate model
 rf = RandomForestClassifier()
+
+# RandomSearchCV to sample random range of values, then fit and evaluate model
 #rf_random = RandomizedSearchCV(estimator=rf, param_distributions=param_grid, n_iter=100, cv=5, verbose=2, n_jobs=-1, random_state=42)
 #rf_random.fit(X_train, y_train)
 #print(rf_random.best_params_)
